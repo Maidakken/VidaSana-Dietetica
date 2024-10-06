@@ -1,0 +1,402 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+
+/*!-----------HEADER----------*/
+
+/*!-----------MAIN----------*/
+
+/*?----------INDEX----------*/
+.hero{
+    text-align: center;
+    height: 600px;
+    background-image: url("../img/Semillas\ banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero p{
+    text-align: center;
+    font-family: lato;
+}
+.bienvenidos{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bienvenidos div{
+    padding: 20px;
+    margin: 40px;
+}
+
+.bienvenidos div h2{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.bienvenidos div p{
+
+    font-family: lato;
+    font-size: 40px;
+}
+
+.bienvenidos img{
+    max-width: 100%;
+    height: auto;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+.productos h2{
+    padding: 10px 70px;
+    font-weight: bold;
+    font-size: 50px;
+    border: rgb(147, 196, 101) solid ;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 20px;
+    background-color: rgb(147, 196, 101);    /*?CHEQUEAR PALETA DE COLORES DE VIDA SANA!*/
+}
+
+.productos .productos-botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos .productos-botones div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+}
+
+.boton-harinas {
+    color: #fff;
+    background-color: rgb(147, 196, 101);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.boton-harinas img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Espacio entre imagen y texto */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+}
+
+.boton-mermelada {
+    color: #fff;
+    background-color: rgb(147, 196, 101);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.boton-mermelada img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 300px;
+    display: block;
+    margin: 0 auto 20px; /* Espacio entre imagen y texto */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+}
+
+.boton-galletas {
+    color: #fff;
+    background-color: rgb(147, 196, 101);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.boton-galletas img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 300px;
+    display: block;
+    margin: 0 auto 20px; /* Espacio entre imagen y texto */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+}
+/*?----------Contacto---------*/
+
+
+
+/*?----------Nosotros---------*/
+
+
+
+/*?----------Productos---------*/
+.header-productos{
+    background-color: rgb(207, 164, 85);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-productos div ul li{
+    margin: 10px;
+}
+
+.header-productos div ul li a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.header-productos div ul{
+    list-style: none;
+    display: flex;
+}
+
+.bg-meunu{
+    background-color: rgb(207, 164, 85);
+}
+
+.nav-link.active{
+    color: #fff !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las cards */
+    justify-items: center; /* Centrar items horizontalmente */
+    align-items: center; /* Centrar items verticalmente */
+    padding: 20px; /* Espaciado alrededor del grid */
+}
+
+.grid-item {
+    background-color: white; /* Fondo de cada card */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de tarjeta */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+    width: 400px;
+    height: 400px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    }
+    
+    .grid-item:nth-child(2) {
+        grid-column: span 2; /* Ocupa las 2 columnas */
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Cambia a una columna */
+    }
+
+    .grid-item:nth-child(2) {
+        grid-column: span 1; /* Ocupa solo una columna, toda la fila */
+    }
+}
+
+
+/*?----------Tiendas---------*/
+
+.hero1 h1{
+    text-align: center;
+    height: 200px;
+    background-image: url("../img/banner-hero2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: lato;
+}
+
+
+.titulo h2{
+    padding: 10px 70px;
+    font-weight: bold;
+    font-size: 50px;
+    border: rgb(147, 196, 101) solid ;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 20px;
+    background-color: rgb(147, 196, 101);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url("../img/alimentos-mundo1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card1{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border: #eff9ff solid;
+    background-color: #eff9ff;
+    padding: 5px 50px;
+    border-radius: 30px;
+    height: 250px;
+}
+
+.card1 .card-contacto1{
+    list-style: none;
+    margin: 10px;
+    color: black;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.card1 .card-contacto1 li{
+    margin: 10px;
+}
+
+.card1 .card-contacto1 img{
+    width: 50px;
+}
+
+.cards .card1 .boton{
+    align-self: flex-end; /* El botón se alineará al final y a la derecha */
+    background-color: greenyellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.cards .card2{
+    text-align: center;;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    margin: 10px;
+    border: #eff9ff solid;
+    background-color: #eff9ff;
+    padding: 5px 50px;
+    border-radius: 30px;
+    height: 250px;
+}
+
+.card2 .card-contacto2{
+    list-style: none;
+    margin: 10px;
+    color: black;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.card2 .card-contacto2 li{
+    margin: 10px;
+}
+
+.card2 .card-contacto2 li a{
+    margin: 10px;
+}
+
+.card2 .card-contacto2 img{
+    width: 50px;
+}
+
+.cards .card2 .boton{
+    align-self: flex-end; /* El botón se alineará al final y a la derecha */
+    background-color: greenyellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: lato;
+    font-weight: bold;
+}
+
+/*!-----------FOOTER----------*/
+
+footer div{
+    background-color: rgb(207, 164, 85);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10 20;
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+.logo img {
+    height: 90px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.social-media img {
+    height: 70px; /* Ajusta el tamaño de los iconos de redes sociales */
+}
