@@ -84,7 +84,7 @@ a{
 
 .productos .productos-botones{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -107,11 +107,11 @@ a{
 }
 
 .boton-harinas img {
-    width: 300px; /* Ajusta el tamaño de la imagen */
+    width: 300px;
     height: auto;
     display: block;
-    margin: 0 auto 20px; /* Espacio entre imagen y texto */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin: 0 auto 20px;
+    border-radius: 50%;
 }
 
 .boton-mermelada {
@@ -125,11 +125,11 @@ a{
 }
 
 .boton-mermelada img {
-    width: 300px; /* Ajusta el tamaño de la imagen */
+    width: 300px;
     height: 300px;
     display: block;
-    margin: 0 auto 20px; /* Espacio entre imagen y texto */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin: 0 auto 20px;
+    border-radius: 50%;
 }
 
 .boton-galletas {
@@ -143,19 +143,65 @@ a{
 }
 
 .boton-galletas img {
-    width: 300px; /* Ajusta el tamaño de la imagen */
+    width: 300px;
     height: 300px;
     display: block;
-    margin: 0 auto 20px; /* Espacio entre imagen y texto */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin: 0 auto 20px;
+    border-radius: 50%;
 }
-/*?----------Contacto---------*/
 
+/*?----------Contacto---------*/
+.form{
+    padding: 30px;
+}
 
 
 /*?----------Nosotros---------*/
 
+.sobre-nosotros{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.sobre-nosotros div{
+    padding: 20px;
+    margin: 40px;
+}
+
+.sobre-nosotros div h2{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sobre-nosotros div p{
+
+    font-family: lato;
+    font-size: 40px;
+}
+
+.sobre-nosotros .sobre-nosotros_img{
+    max-width: 100%;
+    height: auto;
+    width: 900px;
+}
+
+@media (max-width:1250px){
+    .sobre-nosotros{
+        flex-direction: column;
+    }
+    .sobre-nosotros div h2{
+        font-size: 30px;
+    }
+    .sobre-nosotros div p{
+        font-size: 20px;
+    }
+    .sobre-nosotros .sobre-nosotros_img{
+        width: 80%;
+    }
+}
 
 /*?----------Productos---------*/
 .header-productos{
@@ -166,47 +212,65 @@ a{
     align-items: center;
 }
 
-.header-productos div ul li{
-    margin: 10px;
-}
 
 .header-productos div ul li a{
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: raleway;
     font-size: 20px;
 }
 
-.header-productos div ul{
-    list-style: none;
-    display: flex;
-}
-
-.bg-meunu{
+.bg-menu{
     background-color: rgb(207, 164, 85);
 }
 
-.nav-link.active{
-    color: #fff !important;
+.header-productos .container-fluid a img{
+    width: 120px;;
+}
+@media (max-width:1150px){
+    .bienvenidos{
+        flex-direction: column;
+    }
+    .bienvenidos div h2{
+        font-size: 30px;
+    }
+    .bienvenidos div p{
+        font-size: 20px;
+    }
+    .hero{
+        font-size: 20px;
+    }
+}
+@media (max-width: 713px) {
+    .header-productos{
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item {
+        width: 50%;
+        box-sizing: border-box;
+    }
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    grid-gap: 20px; /* Espacio entre las cards */
-    justify-items: center; /* Centrar items horizontalmente */
-    align-items: center; /* Centrar items verticalmente */
-    padding: 20px; /* Espaciado alrededor del grid */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .grid-item {
-    background-color: white; /* Fondo de cada card */
-    border: 1px solid #ddd; /* Borde */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de tarjeta */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar contenido */
-    width: 400px;
-    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .grid-item img {
@@ -217,25 +281,23 @@ a{
 
 @media (max-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .grid-item:nth-child(2) {
-        grid-column: span 2; /* Ocupa las 2 columnas */
+        grid-column: span 2;
     }
 }
 
-/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Cambia a una columna */
+        grid-template-columns: 1fr;
     }
 
     .grid-item:nth-child(2) {
-        grid-column: span 1; /* Ocupa solo una columna, toda la fila */
+        grid-column: span 1;
     }
 }
-
 
 /*?----------Tiendas---------*/
 
@@ -319,7 +381,7 @@ a{
 }
 
 .cards .card1 .boton{
-    align-self: flex-end; /* El botón se alineará al final y a la derecha */
+    align-self: flex-end;
     background-color: greenyellow;
     color: black;
     padding: 10px 20px;
@@ -365,7 +427,7 @@ a{
 }
 
 .cards .card2 .boton{
-    align-self: flex-end; /* El botón se alineará al final y a la derecha */
+    align-self: flex-end;
     background-color: greenyellow;
     color: black;
     padding: 10px 20px;
@@ -390,13 +452,30 @@ footer div{
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 20px; /* Espacio entre los iconos */
+    gap: 20px;
 }
 
 .logo img {
-    height: 90px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 40px;
 }
 
 .social-media img {
-    height: 70px; /* Ajusta el tamaño de los iconos de redes sociales */
+    height: 60px;
+}
+
+@media (max-width: 600px) {
+    footer div{
+        padding: 5 10;
+    }
+    .logo img{
+        height: 20px;
+    }
+    .social-media{
+        flex-direction: column;
+        width: 50%;
+    }
+    .social-media img{
+        padding: 5px;
+        height: 40px;
+    }
 }
