@@ -1,0 +1,23 @@
+footer{
+
+    div{
+        background-color: nth($colores, 1);
+        padding: 10 20;
+        a{
+            
+            img{
+                height: 40px;
+            }
+
+        }
+        div{
+            gap: 20px;
+            a{
+
+                img{
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

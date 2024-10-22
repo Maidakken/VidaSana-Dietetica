@@ -14,7 +14,7 @@ a{
 
 /*!-----------MAIN----------*/
 
-/*?----------INDEX----------*/
+/*?----------INDEX ok----------*/
 .hero{
     text-align: center;
     height: 600px;
@@ -150,13 +150,13 @@ a{
     border-radius: 50%;
 }
 
-/*?----------Contacto---------*/
+/*?----------Contacto ok---------*/
 .form{
     padding: 30px;
 }
 
 
-/*?----------Nosotros---------*/
+/*?----------Nosotros ok---------*/
 
 .sobre-nosotros{
     padding: 20px;
@@ -177,7 +177,6 @@ a{
 }
 
 .sobre-nosotros div p{
-
     font-family: lato;
     font-size: 40px;
 }
@@ -203,14 +202,14 @@ a{
     }
 }
 
-/*?----------Productos---------*/
+/*?----------Productos ok---------*/
 .header-productos{
     background-color: rgb(207, 164, 85);
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} 
 
 
 .header-productos div ul li a{
@@ -224,7 +223,7 @@ a{
 }
 
 .header-productos .container-fluid a img{
-    width: 120px;;
+    width: 120px;
 }
 @media (max-width:1150px){
     .bienvenidos{
@@ -247,6 +246,11 @@ a{
     .navbar-nav .nav-item {
         width: 50%;
         box-sizing: border-box;
+    }
+}
+@media (max-width:450px) {
+    .productos h2{
+        font-size: 25px;
     }
 }
 
@@ -299,7 +303,7 @@ a{
     }
 }
 
-/*?----------Tiendas---------*/
+/*?----------Tiendas ok---------*/
 
 .hero1 h1{
     text-align: center;

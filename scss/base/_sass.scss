@@ -1,0 +1,86 @@
+/* VARIABLES */
+$color-principal:rgb(207, 164, 85);
+$color-secundario:rgb(147, 196, 101);
+$color-terciario:white;
+$color-cuaternario: black;
+
+/* LISTAS */
+
+$colores: rgb(207, 164, 85), rgb(147, 196, 101), white, black;
+$font-sizes: 30px, 40px, 50px;
+
+
+
+
+/* Funcionalidades */
+
+
+
+
+
+/* OPERACIONES */
+
+
+
+
+/* MIXIN */
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-direction ($flex, $flexd, $align, $text) {
+    display: $flex;
+    flex-direction: $flexd;
+    align-items: $align;
+    text-align: $text;
+}
+
+.hero1 h1{
+@include flex(flex, center, center)
+}
+header{
+    @include flex(flex, space-between, center)
+}
+.hero{
+    @include flex(flex, center, center)
+}
+.sobre-nosotros{
+    @include flex(flex, space-between, center)
+}
+.grid-container{
+    @include flex(grid, center, center)
+}
+.bienvenidos{
+    @include flex(flex, space-between, center)
+}
+.productos-botones{
+    @include flex(flex, space-around, center)
+}
+.harinas{
+    @include flex(flex, space-around, center)
+}
+footer div{
+    @include flex(flex, space-between, center)
+}
+.social-media{
+    @include flex(flex, right, center)
+}
+
+.titulo{
+    @include flex-direction(flex, column, center, center)
+}
+.cards{
+    @include flex-direction(flex, column, center, center)
+}
+.card1{
+    @include flex-direction(flex, row, center, center)
+}
+.card2{
+    @include flex-direction(flex, row-reverse, center, center)
+}
+.productos{
+    @include flex-direction(flex, column, center, center)
+}
