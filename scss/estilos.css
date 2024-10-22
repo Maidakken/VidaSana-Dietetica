@@ -1,0 +1,443 @@
+/* VARIABLES */
+/* LISTAS */
+/* Funcionalidades */
+/* OPERACIONES */
+/* MIXIN */
+.hero1 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.bienvenidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productos-botones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.harinas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .sobre-nosotros {
+    flex-direction: column;
+  }
+  .sobre-nosotros div h2 {
+    font-size: 30px;
+  }
+  .sobre-nosotros div p {
+    font-size: 20px;
+  }
+  .sobre-nosotros .sobre-nosotros_img {
+    width: 80%;
+  }
+}
+@media (max-width: 1150px) {
+  .bienvenidos {
+    flex-direction: column;
+  }
+  .bienvenidos div h2 {
+    font-size: 30px;
+  }
+  .bienvenidos div p {
+    font-size: 20px;
+  }
+  .hero {
+    font-size: 20px;
+  }
+}
+@media (max-width: 713px) {
+  .header-productos {
+    flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 450px) {
+  .productos h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item:nth-child(2) {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-item:nth-child(2) {
+    grid-column: span 1;
+  }
+}
+@media (max-width: 600px) {
+  footer div {
+    padding: 5 10;
+  }
+  .logo img {
+    height: 20px;
+  }
+  .social-media {
+    flex-direction: column;
+    width: 50%;
+  }
+  .social-media img {
+    padding: 5px;
+    height: 40px;
+  }
+}
+header {
+  background-color: rgb(207, 164, 85);
+  padding: 15px;
+}
+main .hero {
+  text-align: center;
+  height: 600px;
+  background-image: url("../img/Semillas banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 40px;
+  flex-direction: column;
+}
+main .hero p {
+  text-align: center;
+  font-family: lato;
+}
+main .hero1 h1 {
+  text-align: center;
+  height: 200px;
+  background-image: url("../img/banner-hero2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 40px;
+  flex-direction: column;
+  font-family: lato;
+}
+main .titulo h2 {
+  padding: 10px 70px;
+  font-weight: bold;
+  font-size: 50px;
+  border: rgb(147, 196, 101) solid;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 20px;
+  background-color: rgb(147, 196, 101);
+}
+main .cards {
+  padding: 10px 70px;
+  font-weight: bold;
+  font-size: 50px;
+  border: rgb(147, 196, 101) solid;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 20px;
+  background-color: rgb(147, 196, 101);
+}
+main .cards .card1 {
+  margin: 10px;
+  border: white solid;
+  background-color: white;
+  padding: 5px 50px;
+  border-radius: 30px;
+  height: 250px;
+}
+main .cards .card1 .card-contacto1 {
+  list-style: none;
+  margin: 10px;
+  color: black;
+  font-family: lato;
+  font-weight: bold;
+}
+main .cards .card1 .card-contacto1 ul li {
+  margin: 10px;
+}
+main .cards .card1 .card-contacto1 ul li img {
+  width: 50px;
+}
+main .cards .card1 .card-contacto1 .boton {
+  align-self: flex-end;
+  background-color: rgb(147, 196, 101);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: lato;
+  font-weight: bold;
+}
+main .cards .card2 {
+  align-self: flex-end;
+  margin: 10px;
+  border: white solid;
+  background-color: white;
+  padding: 5px 50px;
+  border-radius: 30px;
+  height: 250px;
+}
+main .cards .card2 .card-contacto2 {
+  list-style: none;
+  margin: 10px;
+  color: black;
+  font-family: lato;
+  font-weight: bold;
+}
+main .cards .card2 .card-contacto2 li {
+  margin: 10px;
+}
+main .cards .card2 .card-contacto2 li a {
+  margin: 10px;
+}
+main .cards .card2 .card-contacto2 li a img {
+  width: 50px;
+}
+main .cards .card2 .boton {
+  align-self: flex-end;
+  background-color: rgb(147, 196, 101);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: lato;
+  font-weight: bold;
+}
+main .form {
+  padding: 30px;
+}
+main .sobre-nosotros {
+  padding: 20px;
+}
+main .sobre-nosotros div {
+  padding: 20px;
+  margin: 40px;
+}
+main .sobre-nosotros div h2 {
+  margin: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+main .sobre-nosotros div p {
+  font-family: lato;
+  font-size: 40px;
+}
+main .sobre-nosotros .sobre-nosotros_img {
+  max-width: 100%;
+  height: auto;
+  width: 900px;
+}
+main .productos .grid-container {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+main .productos .grid-container .grid-item {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+main .productos .grid-container .grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+main .bienvenidos {
+  padding: 20px;
+}
+main .bienvenidos div {
+  padding: 20px;
+  margin: 40px;
+}
+main .bienvenidos div h2 {
+  margin: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+main .bienvenidos div p {
+  font-family: lato;
+  font-size: 40px;
+}
+main .bienvenidos .img_welcome {
+  max-width: 100%;
+  height: auto;
+}
+main .productos {
+  justify-content: center;
+}
+main .productos h2 {
+  padding: 10px 70px;
+  font-weight: bold;
+  font-size: 50px;
+  border: rgb(147, 196, 101) solid;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 20px;
+  background-color: rgb(147, 196, 101);
+}
+main .productos .productos-botones {
+  flex-wrap: wrap;
+}
+main .productos .productos-botones .harinas {
+  margin: 10px;
+}
+main .productos .productos-botones .harinas a {
+  color: white;
+  background-color: rgb(147, 196, 101);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+main .productos .productos-botones .harinas a img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+main .productos .productos-botones .mermeladas a {
+  color: white;
+  background-color: rgb(147, 196, 101);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+main .productos .productos-botones .mermeladas a img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+main .productos .galletas a {
+  color: white;
+  background-color: rgb(147, 196, 101);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+main .productos .galletas a img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+footer div {
+  background-color: rgb(207, 164, 85);
+  padding: 10 20;
+}
+footer div a img {
+  height: 40px;
+}
+footer div div {
+  gap: 20px;
+}
+footer div div a img {
+  height: 60px;
+}/*# sourceMappingURL=estilos.css.map */
