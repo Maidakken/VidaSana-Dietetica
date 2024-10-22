@@ -334,6 +334,7 @@ main .productos .grid-container .grid-item {
   width: 100%;
   max-width: 400px;
   height: auto;
+  transform: scale(10, 10);
 }
 main .productos .grid-container .grid-item img {
   max-width: 100%;
@@ -429,7 +430,7 @@ main .productos .galletas a img {
 }
 
 footer div {
-  background-color: rgb(207, 164, 85);
+  background: linear-gradient(0deg, rgb(207, 164, 85) 0%, rgb(207, 187, 45) 68%, rgb(255, 255, 255) 100%);
   padding: 10 20;
 }
 footer div a img {

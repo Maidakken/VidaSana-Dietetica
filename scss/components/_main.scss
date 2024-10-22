@@ -146,6 +146,12 @@ main{
     .form{
         padding: 30px;
     }
+    .formImg{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .sobre-nosotros{
         padding: 20px;
         div{
@@ -185,6 +191,9 @@ main{
                 width: 100%;
                 max-width: 400px;
                 height: auto;
+            .grid-item:hover{
+                transform: scale( 1.2, 1.2);
+            }
                 img{
                     max-width: 100%;
                     height: auto;
@@ -229,6 +238,9 @@ main{
             flex-wrap: wrap;
             .harinas{
                 margin: 10px;
+            .boton-harinas:hover{
+                transform: scale( 1.2, 1.2);
+            }
                 a{
                     color: nth($colores, 3);
                     background-color: nth($colores, 2);
@@ -248,6 +260,9 @@ main{
             }
 
             .mermeladas
+            .boton-mermeladas:hover{
+                transform: scale( 1.2, 1.2);
+            }
                 a{
                     color: nth($colores, 3);
                     background-color: nth($colores, 2);
@@ -267,6 +282,9 @@ main{
             }
             
             .galletas{
+            .boton-galletas:hover{
+                transform: scale( 1.2, 1.2);
+            }
                 a{
                     color: nth($colores, 3);
                     background-color: nth($colores, 2);

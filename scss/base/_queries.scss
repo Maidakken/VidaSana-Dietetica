@@ -61,6 +61,19 @@
         grid-column: span 1;
     }
 }
+@media (max-width:1350px) {
+    .formImg{
+        flex-direction: column;
+    }
+}
+@media (max-width:985px) {
+    .formImg{
+        flex-direction: column;
+    }
+    .img-contacto{
+        width: 80%;
+    }
+}
 
 @media (max-width: 600px) {
     footer div{

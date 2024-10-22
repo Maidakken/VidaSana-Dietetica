@@ -1,7 +1,7 @@
 footer{
-
+    
     div{
-        background-color: nth($colores, 1);
+        background: linear-gradient(0deg, rgba(207,164,85,1) 0%, rgba(207,187,45,1) 68%, rgba(255,255,255,1) 100%);
         padding: 10 20;
         a{
             
@@ -12,6 +12,7 @@ footer{
         }
         div{
             gap: 20px;
+            margin: 30px;
             a{
 
                 img{
